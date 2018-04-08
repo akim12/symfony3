@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Genus {{ name }}
+{% endblock %}
+
+{% block body %}
+
+	<h1>The genus {{ name }}</h1>
+
+	<ul>
+		{% for note in notes%}
+			<li>{{ note }}</li>
+		{% endfor %}
+	</ul>
+<i class="fa fa-address-card-o" aria-hidden="true"></i>
+<img src="{{ asset('img/montre.jpg')}}">
+
+{% endblock %}
